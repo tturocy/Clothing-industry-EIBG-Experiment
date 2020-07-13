@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Answer Page{% endblock %}
+
+{% block content %}
+
+<p>You guessed the answers were:</p>
+
+<p>For Table 1:{{player.Matrix1}}</p>
+<p>For Table 2:{{player.Matrix2}}</p>
+<p>For Table 3:{{player.Matrix3}}</p>
+<p>For Table 4:{{player.Matrix4}}</p>
+<p>For Table 5:{{player.Matrix5}}</p>
+
+<p>The right answers were:</p>
+<p>For Table 1:29</p>
+<p>For Table 2:35</p>
+<p>For Table 3:30</p>
+<p>For Table 4:27</p>
+<p>For Table 5:28</p>
+
+<p>Remember you earn 10p for every correct table.</p>
+
+{% next_button %}
+
+{% endblock %}

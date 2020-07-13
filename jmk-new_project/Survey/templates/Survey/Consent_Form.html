@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Consent Form{% endblock %}
+
+{% block content %}
+
+<p>I agree to take part in this experimental session by undertaking a number of computer-based tasks.</p>
+<p>I understand that the data generated during the session will be entirely anonymous, so that my name will not be linked to the data that is generated. The anonymous data will be analysed by the researchers and subsequently stored at XXX, where it may be downloaded by other researchers.</p>
+<p>I understand that my participation is voluntary and that I am free to withdraw at any time.</p>
+
+
+{% formfields %}
+
+{% next_button %}
+
+{% endblock %}

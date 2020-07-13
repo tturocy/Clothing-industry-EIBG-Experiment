@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Gift Card Choice 2{% endblock %}
+
+{% block content %}
+
+<p>You have picked fashion retailer {{player.get_GiftCard1_display}}</p>
+<p>Now that you have chosen your clothes retailer are you happy with your choice? If so, select them again or, if not, then you can choose to change it to one of the others by selecting them in the first drop down box:</p>
+
+<img src="https://i.imgur.com/BFNbwtv.png" width="500px" />
+
+{% formfields %}
+
+{% next_button %}
+
+<p>Here is more information on how the gift card rankings were created with references. This could not be given on the previous page as it would have given away who the retailers were.</p>
+
+<img src="https://i.imgur.com/lnjM7as.png" width="1000px" length="1000px" />
+
+{% endblock %}

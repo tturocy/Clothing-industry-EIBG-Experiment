@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Thank you!{% endblock %}
+
+{% block content %}
+
+<p>Thank you very much for your participation in todays experiment. The experimenters would like to reassure you that your responses are anonymous and if you win the gift card you will receive this via email within 2 weeks. To recap you have earnt £4.50 from the survey plus your earnings from the Counting Zeroes Task.</p>
+
+<p>And you picked the gift card from {{player.get_GiftCard2_display}}</p>
+
+<p>You have now completed the experiment, please click the next button to sumbit your responses</p>
+
+{% next_button %}
+
+{% endblock %}
