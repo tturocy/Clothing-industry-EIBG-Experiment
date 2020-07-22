@@ -1,27 +1,67 @@
 {% extends "global/Page.html" %}
 {% load otree %}
 
-{% block title %}Answer Page{% endblock %}
+{% block title %}
+<div class="container">
+    <div class="p-2 row justify-content-center text-light bg-primary rounded">
+        <h2>Part 2 Results</h2>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
 
-<p>You guessed the answers were:</p>
+<table class="table table-sm">
+    <thead class="thead-light">
+        <tr align="center">
+            <th width="25%">Table number</th>
+            <th width="25%">Your count</th>
+            <th width="25%">Actual</th>
+            <th width="25%">Earnings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <th scope="row">1</th>
+            <td>{{player.Matrix1}}</td>
+            <td>29</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <th scope="row">2</th>
+            <td>{{player.Matrix2}}</td>
+            <td>35</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <th scope="row">3</th>
+            <td>{{player.Matrix3}}</td>
+            <td>30</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <th scope="row">4</th>
+            <td>{{player.Matrix4}}</td>
+            <td>27</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <th scope="row">5</th>
+            <td>{{player.Matrix5}}</td>
+            <td>28</td>
+            <td></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td scope="row" colspan="3" align="right"><b>Total earnings for Part 2</b></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
 
-<p>For Table 1:{{player.Matrix1}}</p>
-<p>For Table 2:{{player.Matrix2}}</p>
-<p>For Table 3:{{player.Matrix3}}</p>
-<p>For Table 4:{{player.Matrix4}}</p>
-<p>For Table 5:{{player.Matrix5}}</p>
-
-<p>The right answers were:</p>
-<p>For Table 1:29</p>
-<p>For Table 2:35</p>
-<p>For Table 3:30</p>
-<p>For Table 4:27</p>
-<p>For Table 5:28</p>
-
-<p>Remember you earn 10p for every correct table.</p>
-
-{% next_button %}
+<div class="row justify-content-center">
+        <button class="otree-btn-next btn btn-primary">Go to Part 3</button>
+</div>
 
 {% endblock %}

@@ -1,14 +1,26 @@
 {% extends "global/Page.html" %}
 {% load otree %}
 
-{% block title %}Counting Zeroes 3!{% endblock %}
+{% block title %}
+<div class="container">
+    <div class="p-2 row justify-content-center text-light bg-primary rounded">
+        <h2>Table 3 of 5</h2>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
 
-<img src="https://i.imgur.com/dxrjwAA.png" width="500px" />
+<div class="container">
+    <div class="row justify-content-center bg-white rounded">
+        <img class="p-img-fluid" src="{% static "RealEffortTask/table3.png" %}">
+    </div>
+    {% formfields %}
+    <div class="row justify-content-center">
+        <button class="otree-btn-next btn btn-primary">Confirm and go to Table 4</button>
+    </div>
+</div>
 
-{% formfields %}
 
-{% next_button %}
 
 {% endblock %}

@@ -32,4 +32,12 @@ class RealEffortTask5(Page):
     timer_text = 'Time left'
 class RETSummary(Page):
     form_model = 'player'
-page_sequence = [RETInstructions, RealEffortTask1, RealEffortTask2, RealEffortTask3, RealEffortTask4, RealEffortTask5, RETSummary]
+page_sequence = [
+    RETInstructions,
+    RealEffortTask1,
+    RealEffortTask2,
+    RealEffortTask3,
+    RealEffortTask4,
+    RealEffortTask5,
+    RETSummary
+]
