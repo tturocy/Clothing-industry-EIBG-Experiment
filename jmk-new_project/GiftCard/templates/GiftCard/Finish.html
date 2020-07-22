@@ -1,16 +1,31 @@
 {% extends "global/Page.html" %}
 {% load otree %}
 
-{% block title %}Thank you!{% endblock %}
+{% block title %}
+<div class="container">
+    <div class="p-2 row justify-content-center text-light bg-primary rounded">
+        <h2>Thank you</h2>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
 
-<p>Thank you very much for your participation in todays experiment. The experimenters would like to reassure you that your responses are anonymous and if you win the gift card you will receive this via email within 2 weeks. To recap you have earnt £4.50 from the survey plus your earnings from the Counting Zeroes Task.</p>
+<p>Thank you very much for your participation in today's experiment.</p>
 
-<p>And you picked the gift card from {{player.get_GiftCard2_display}}</p>
+<p>To recap, your earnings from today's experiment are:
+    <ul>
+    <li><b>£4.50</b> for completing Part 1;</li>
+    <li><b>XXXX</b> for XXXX correct answers in Part 2;</li>
+    <li>A chance of receiving a <b>£25 gift card from {{player.get_GiftCard2_display}}</b></li>
+</ul>
+</p>
 
-<p>You have now completed the experiment, please click the next button to sumbit your responses</p>
-
-{% next_button %}
+<p>
+    You will be contacted by the Lab Manager of LEDR
+    (<code>ledr.experiments@uea.ac.uk</code>)
+    via your email address on file in our participant register
+    with further details on receiving your payment.
+</p>
 
 {% endblock %}
