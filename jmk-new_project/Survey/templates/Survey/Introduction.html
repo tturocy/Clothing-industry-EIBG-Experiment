@@ -1,13 +1,11 @@
-{% extends "global/Page.html" %}
-{% load otree %}
+{% extends "./BasePage.html" %}
 
 
-{% block content %}
+{% block headtext %}
+Introduction
+{% endblock %}
 
-<div class="container">
-    <div class="p-2 row justify-content-center text-light bg-primary rounded">
-        <h3 class="center">Introduction</h3>
-    </div>
+{% block maintext %}
 
     <p>
         Welcome!
@@ -22,12 +20,14 @@
         Your decisions in this experiment will be recorded anonymously, and there will
         be no way to identify you in the collected data.
     </p>
-</div>
-
-<div class="container">
-    <div class="row justify-content-center">
-        <button class="otree-btn-next btn btn-primary">Continue to next page</button>
-    </div>
-</div>
-
+    <p>
+        There are three (3) parts to today's experiment.
+        You will receive instructions for each part of the experiment at the start
+        of that part.
+    </p>
 {% endblock %}
+
+{% block buttontext %}
+Continue to next page
+{% endblock %}
+
