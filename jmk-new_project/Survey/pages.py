@@ -5,9 +5,6 @@ from .models import Constants
 
 class Introduction(Page):
     form_model = 'player'
-class Consent_Form(Page):
-    form_model = 'player'
-    form_fields = ['Name', 'Date', 'Signature']
 class Instructions1(Page):
     form_model = 'player'
 class Survey(Page):
@@ -25,4 +22,4 @@ class Survey4(Page):
 class Survey5(Page):
     form_model = 'player'
     form_fields = ['Plan2', 'Intention11', 'Age', 'Gender', 'Ethnicity', 'Income', 'PastBehaviour']
-page_sequence = [Introduction, Consent_Form, Instructions1, Survey, Survey2, Survey3, Survey4, Survey5]
+page_sequence = [Introduction, Instructions1, Survey, Survey2, Survey3, Survey4, Survey5]

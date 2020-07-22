@@ -28,9 +28,6 @@ likert_choices = [
 ]
 
 class Player(BasePlayer):
-    Name = models.StringField()
-    Signature = models.StringField(label='Signature')
-    Date = models.StringField(initial='DD/MM/YYYY')
     SubjectiveNorm1 = models.StringField(
         choices=likert_choices,
         label='Those that are important to me have purchased from an ethical clothing retailer in the last month from home')
