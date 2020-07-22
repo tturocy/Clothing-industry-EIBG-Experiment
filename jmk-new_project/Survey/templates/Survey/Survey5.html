@@ -1,12 +1,20 @@
 {% extends "global/Page.html" %}
 {% load otree %}
 
-{% block title %}Survey{% endblock %}
-
 {% block content %}
+
+<div class="container">
+    <div class="p-2 row justify-content-center text-light bg-primary rounded">
+        <h3 class="center">Survey: Page 5 of 5</h3>
+    </div>
+</div>
 
 {% formfields %}
 
-{% next_button %}
+<div class="container">
+    <div class="row justify-content-center">
+        <button class="otree-btn-next btn btn-primary">Finish survey</button>
+    </div>
+</div>
 
 {% endblock %}
