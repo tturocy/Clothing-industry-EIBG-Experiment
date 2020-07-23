@@ -4,17 +4,29 @@
 {% block content %}
 
 <div class="container">
-    <div class="p-2 row justify-content-center text-light bg-primary rounded">
+    <div class="col-12 p-2 row justify-content-center text-light bg-primary rounded">
         <h3 class="center">Survey: Page 2 of 5</h3>
     </div>
-</div>
 
-{% formfields %}
+{% for field in form %}
+  <div class="col-12 row p-3 border rounded">
+      <div class="container">
+          <div class="col-12 row justify-content-left font-weight-bold">
+              {{ field.label }}
+          </div>
+          <div class="col-12 row justify-content-end">
+              {{ field }}
+          </div>
 
-<div class="container">
-    <div class="row justify-content-center">
+      </div>
+
+  </div>
+{% endfor %}
+
+    <div class="p-3 row justify-content-center">
         <button class="otree-btn-next btn btn-primary">Continue to next page</button>
     </div>
 </div>
+
 
 {% endblock %}
