@@ -271,3 +271,7 @@ class Player(BasePlayer):
               "retailers from home in the last month",
         widget=widgets.RadioSelectHorizontal
     )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.participant.vars['part1_earnings'] = c(4.50)

@@ -22,4 +22,5 @@ class Survey4(Page):
 class Survey5(Page):
     form_model = 'player'
     form_fields = ['Plan2', 'Intention11', 'Age', 'Gender', 'Ethnicity', 'Income', 'PastBehaviour']
+
 page_sequence = [Introduction, Instructions1, Survey1, Survey2, Survey3, Survey4, Survey5]
