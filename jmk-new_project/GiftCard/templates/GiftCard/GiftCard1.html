@@ -12,16 +12,76 @@
 {% block content %}
 
 <div class="container">
-    <p align="center">
-        <img align="center" width="500px" src="{% static "GiftCard/giftcard1.png" %}">
-    </p>
-    <div class="col-12 row justify-content-center text-secondary font-italic">
-        More information is provided below on how these rankings were assessed.
+    <div class="row justify-content-center">
+        <div class="col-auto">
+    <table class="table table-responsive" width="100%">
+        <caption>
+            More information is provided below on how these rankings were assessed.
+        </caption>
+        <thead class="thead-dark">
+            <tr>
+            <th></th>
+            <th>Retailer A</th>
+            <th>Retailer B</th>
+            <th>Retailer C</th>
+            <th>Retailer D</th>
+            <th>Retailer E</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th span="row">Environmental responsibility</th>
+            <td align="center">5/5</td>
+            <td align="center">3/5</td>
+            <td align="center">2/5</td>
+            <td align="center">4/5</td>
+            <td align="center">1/5</td>
+        </tr>
+        <tr>
+            <th span="row">Employee welfare</th>
+            <td align="center">5/5</td>
+            <td align="center">2/5</td>
+            <td align="center">3/5</td>
+            <td align="center">4/5</td>
+            <td align="center">1/5</td>
+       </tr>
+        <tr>
+            <th span="row">Animal welfare</th>
+            <td align="center">5/5</td>
+            <td align="center">4/5</td>
+            <td align="center">3/5</td>
+            <td align="center">2/5</td>
+            <td align="center">1/5</td>
+        </tr>
+        <tr>
+            <th span="row">Slow fashion</th>
+            <td align="center">5/5</td>
+            <td align="center">2/5</td>
+            <td align="center">4/5</td>
+            <td align="center">3/5</td>
+            <td align="center">1/5</td>
+        </tr>
+        <tr>
+            <th span="row">Overall</th>
+            <td align="center">5/5</td>
+            <td align="center">2/5</td>
+            <td align="center">3/5</td>
+            <td align="center">4/5</td>
+            <td align="center">1/5</td>
+       </tr>
+        </tbody>
+    </table>
+        </div>
     </div>
-    <div class="col-12 row justify-content-center">
-        {% formfields %}
+    <div class="row justify-content-center p-3 border rounded">
+        <div class="col-6 font-weight-bold">
+            {{ form.GiftCard1.label}}
+        </div>
+        <div class="col-4">
+            {{ form.GiftCard1 }}
+        </div>
     </div>
-    <div class="row justify-content-center pb-5">
+    <div class="row justify-content-center p-3">
         <button class="otree-btn-next btn btn-primary">Confirm decision</button>
     </div>
 </div>
