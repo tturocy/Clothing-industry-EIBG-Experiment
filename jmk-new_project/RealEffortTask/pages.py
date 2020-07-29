@@ -13,6 +13,20 @@ class RealEffortTask1(Page):
     timeout_seconds = 30
     timer_text = 'Time left'
 
+    def vars_for_template(self):
+        return {
+            'table': [
+                [1, 1, 0, 1, 0, 1, 1, 0],
+                [0, 0, 0, 1, 1, 0, 1, 1],
+                [1, 1, 0, 0, 1, 1, 0, 1],
+                [1, 0, 1, 1, 1, 0, 0, 1],
+                [1, 0, 0, 1, 0, 0, 0, 0],
+                [1, 1, 1, 1, 1, 1, 0, 0],
+                [0, 1, 1, 0, 1, 0, 0, 1],
+                [0, 1, 1, 0, 1, 0, 0, 1],
+            ]
+        }
+
     def before_next_page(self):
         if self.player.Matrix1 == 29:
             self.player.payoff += c(0.10)
@@ -25,6 +39,20 @@ class RealEffortTask2(Page):
     form_fields = ['Matrix2']
     timeout_seconds = 30
     timer_text = 'Time left'
+
+    def vars_for_template(self):
+        return {
+            'table': [
+                [1, 1, 0, 1, 0, 0, 1, 0],
+                [1, 1, 0, 0, 1, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 0, 0],
+                [1, 1, 1, 0, 0, 1, 0, 1],
+                [1, 0, 0, 1, 0, 1, 1, 0],
+                [1, 0, 0, 0, 1, 1, 0, 0],
+                [0, 0, 0, 1, 0, 1, 1, 0],
+                [0, 1, 1, 0, 0, 1, 1, 0],
+            ]
+        }
 
     def before_next_page(self):
         if self.player.Matrix2 == 35:
@@ -39,6 +67,20 @@ class RealEffortTask3(Page):
     timeout_seconds = 30
     timer_text = 'Time left'
 
+    def vars_for_template(self):
+        return {
+            'table': [
+                [1, 0, 1, 1, 0, 1, 0, 1],
+                [0, 1, 0, 0, 1, 0, 1, 0],
+                [0, 1, 1, 0, 1, 1, 0, 1],
+                [0, 0, 1, 1, 0, 1, 1, 1],
+                [0, 1, 1, 0, 0, 1, 1, 0],
+                [0, 1, 0, 1, 0, 1, 1, 0],
+                [1, 0, 1, 1, 1, 0, 1, 1],
+                [0, 0, 0, 0, 0, 1, 1, 0],
+            ]
+        }
+
     def before_next_page(self):
         if self.player.Matrix3 == 30:
             self.player.payoff += c(0.10)
@@ -52,6 +94,20 @@ class RealEffortTask4(Page):
     timeout_seconds = 30
     timer_text = 'Time left'
 
+    def vars_for_template(self):
+        return {
+            'table': [
+                [0, 0, 1, 0, 0, 1, 1, 1],
+                [0, 0, 0, 1, 1, 0, 1, 0],
+                [1, 1, 0, 1, 1, 0, 1, 1],
+                [0, 0, 1, 1, 0, 1, 1, 0],
+                [0, 1, 0, 1, 1, 0, 1, 1],
+                [1, 1, 0, 0, 1, 1, 1, 0],
+                [1, 1, 0, 1, 0, 0, 1, 1],
+                [1, 1, 0, 1, 0, 0, 1, 1],
+            ]
+        }
+
     def before_next_page(self):
         if self.player.Matrix4 == 27:
             self.player.payoff += c(0.10)
@@ -64,6 +120,20 @@ class RealEffortTask5(Page):
     form_fields = ['Matrix5']
     timeout_seconds = 30
     timer_text = 'Time left'
+
+    def vars_for_template(self):
+        return {
+            'table': [
+                [1, 0, 1, 1, 0, 1, 1, 1],
+                [1, 0, 0, 1, 0, 1, 0, 1],
+                [1, 1, 1, 1, 0, 1, 1, 0],
+                [0, 1, 0, 1, 0, 1, 0, 1],
+                [0, 1, 0, 1, 1, 0, 1, 1],
+                [1, 0, 1, 1, 0, 1, 0, 0],
+                [1, 0, 0, 0, 1, 0, 1, 0],
+                [0, 1, 0, 0, 1, 1, 0, 1],
+            ]
+        }
 
     def before_next_page(self):
         if self.player.Matrix5 == 28:

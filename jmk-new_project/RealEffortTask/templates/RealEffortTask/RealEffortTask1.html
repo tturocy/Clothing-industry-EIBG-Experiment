@@ -13,10 +13,26 @@
 
 <div class="container">
     <div class="row justify-content-center bg-white rounded">
-        <img class="p-img-fluid" src="{% static "RealEffortTask/table1.png" %}">
+        <table class="table table-sm table-bordered"><tbody>
+            {% for row in table %}
+            <tr>
+                {% for col in row %}
+                    <td align="center">{{ col }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody></table>
     </div>
-    {% formfields %}
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-center font-weight-bold">
+        <div class="col-4 font-weight-bold">
+            How many zeroes are in the table?
+        </div>
+        <div class="col-2">
+            {{ form.Matrix1 }}
+        </div>
+    </div>
+
+    <div class="row justify-content-center p-3">
         <button class="otree-btn-next btn btn-primary">Confirm and go to Table 2</button>
     </div>
 </div>
