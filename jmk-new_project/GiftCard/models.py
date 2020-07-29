@@ -22,7 +22,7 @@ class Player(BasePlayer):
     GiftCard2 = models.StringField(
         choices=[['1', 'A - Komodo'], ['2', 'B - ASOS'], ['3', 'C - Next'],
                  ['4', 'D - H&M'], ['5', 'E - Boohoo']],
-        label="Which retailers' gift card would you like?",
+        label="Which retailer's gift card would you like?",
         widget=widgets.RadioSelectHorizontal
     )
     RankingAgreement = models.BooleanField(

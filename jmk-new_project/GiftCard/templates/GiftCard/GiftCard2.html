@@ -23,7 +23,8 @@
         <div class="col-auto">
     <table class="table table-responsive" width="100%">
         <caption>
-            More information is provided below on how these rankings were assessed.
+            More information is provided below
+            on how these rankings were assessed.
         </caption>
         <thead class="thead-dark">
             <tr>
@@ -70,11 +71,11 @@
         </tr>
         <tr>
             <th span="row">Overall</th>
-            <td align="center">5/5</td>
-            <td align="center">2/5</td>
-            <td align="center">3/5</td>
-            <td align="center">4/5</td>
-            <td align="center">1/5</td>
+            <td align="center" class="font-weight-bold">5/5</td>
+            <td align="center" class="font-weight-bold">2/5</td>
+            <td align="center" class="font-weight-bold">3/5</td>
+            <td align="center" class="font-weight-bold">4/5</td>
+            <td align="center" class="font-weight-bold">1/5</td>
        </tr>
         </tbody>
     </table>
@@ -90,11 +91,11 @@
         you chose on the previous page, or switch to any of the other retailers.
     </div>
 
-    <div class="row justify-content-center p-3 border rounded">
-        <div class="col-6 font-weight-bold">
+    <div class="container justify-content-center p-3 border rounded">
+        <div class="row font-weight-bold justify-content-center">
             {{ form.GiftCard2.label}}
         </div>
-        <div class="col-6">
+        <div class="row justify-content-center">
             {{ form.GiftCard2 }}
         </div>
     </div>
@@ -120,12 +121,11 @@
     </div>
 </div>
 
-    <div class="container border rounded">
-        <div class="row">
+<div class="container border">
+        <div class="row justify-content-center">
             Here is more information on how the gift card rankings were created with references.
         </div>
-        <div class="row">
-            <img src="{% static "GiftCard/retailers.png" %}"/>
-        </div>
+<img src="{% static "GiftCard/retailers.png" %}" width="100%"/>
+</div>
 
 {% endblock %}
