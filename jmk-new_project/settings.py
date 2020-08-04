@@ -1,7 +1,9 @@
 from os import environ
 SESSION_CONFIG_DEFAULTS = dict(real_world_currency_per_point=1, participation_fee=0)
 SESSION_CONFIGS = [
-    dict(name='Survey', num_demo_participants=2,
+    dict(name='Survey',
+         display_name="Ethical intention-behaviour gap",
+         num_demo_participants=2,
          app_sequence=['Survey',
                        'RealEffortTask',
                        'GiftCard'])

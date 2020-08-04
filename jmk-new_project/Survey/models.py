@@ -28,6 +28,17 @@ likert_choices = [
 ]
 
 class Player(BasePlayer):
+    Example = models.StringField(
+        choices=likert_choices,
+        label="I like chocolate",
+        widget=widgets.RadioSelectHorizontal,
+        blank=True
+    )
+    ExampleTF = models.BooleanField(
+        label="Marmite is my favourite condiment",
+        widget=widgets.RadioSelectHorizontal,
+        blank=True
+    )
     SubjectiveNorm1 = models.StringField(
         choices=likert_choices,
         label="Those who are important to me have purchased from an ethical "

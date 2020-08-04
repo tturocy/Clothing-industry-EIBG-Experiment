@@ -7,6 +7,7 @@ class Introduction(Page):
     form_model = 'player'
 class Instructions1(Page):
     form_model = 'player'
+    form_fields = ['Example', 'ExampleTF']
 class Survey1(Page):
     form_model = 'player'
     form_fields = ['Attitude1', 'SDB1', 'SubjectiveNorm1', 'SDB2', 'Intention1', 'SDB3', 'PBC1', 'SDB4', 'Attitude42']

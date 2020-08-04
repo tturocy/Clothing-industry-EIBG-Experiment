@@ -4,13 +4,66 @@
 
 {% block maintext %}
 
-<p>In the first part you are required to respond to a set of statements on a scale from strongly disagree to strongly agree. For example:</p>
-<p>I like Chocolate. </p>
-<p>Here you will click in a drop down box "strongly agree" if you strongly agree with the statement I like chocolate. Some other questions will be answered True or False in a drop down box.</p>
-<p>Some questions will ask for your opinion on ethical clothing which is clothing that seeks to minimise its negative impact on the environment, employees and animals via processes that include, but are not limited to, slow fashion. Slow fashion is an approach to making clothes to ensure they are worn as many times as possible to reduce waste, this is achieved through more durable fabrics and designs that last more than one fashion season.</p>
+<h3>Format of survey questions</h3>
 
 <p>
-    You will receive £4.50 for completing Part 1, which will be included in your total earnings
+    In this part you will be asked to evaluate a series of statements.
+    Some statements will look like this:
+</p>
+
+  <div class="col-12 row p-3 border rounded">
+      <div class="container">
+          <div class="col-12 row justify-content-left font-weight-bold">
+              {{ form.Example.label }}
+          </div>
+          <div class="col-12 row justify-content-end">
+              {{ form.Example }}
+          </div>
+      </div>
+  </div>
+
+<p>
+    For each statement, you are asked to indicate the extent to which you
+    agree with the statement based on your own views or experience, on the
+    scale from <strong>Strongly Disagree</strong> to
+    <strong>Strongly Agree</strong>.
+</p>
+
+<p>
+    Other statements will look like this:
+</p>
+
+  <div class="col-12 row p-3 border rounded">
+      <div class="container">
+          <div class="col-12 row justify-content-left font-weight-bold">
+              {{ form.ExampleTF.label }}
+          </div>
+          <div class="col-12 row justify-content-end">
+              {{ form.ExampleTF }}
+          </div>
+      </div>
+  </div>
+
+<p>
+    For these statements, you should select <strong>True</strong> if you
+    agree with the statement, or <strong>False</strong> if you do not.
+</p>
+
+<h3>Ethical clothing</h3>
+
+<p>
+    Some questions will ask for your view on <strong>ethical clothing</strong>.
+    Ethical clothing is defined as clothing which is produced in a way that
+    seeks to minimise negative impact on the environment, employees and animals.
+    One such process if <strong>slow fashion</strong>, which is an approach to making
+    clothes to ensure they are worn as many times as possible to reduce waste.
+    This is achieved through more durable fabrics and designs that last more than
+    one fashion season.
+</p>
+
+<h3>Earnings</h3>
+<p>
+    You will receive £4.50 for completing Part 1.  This will be included in your total earnings
     tabulated at the end of today's experiment.
 </p>
 {% endblock %}
