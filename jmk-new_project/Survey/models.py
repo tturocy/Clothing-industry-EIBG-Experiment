@@ -44,62 +44,64 @@ class Player(BasePlayer):
     SubjectiveNorm1 = models.StringField(
         choices=likert_choices,
         label="Those who are important to me have purchased from an ethical "
-              "clothing retailer in the last month from home",
+              "clothing retailer online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     Intention1 = models.StringField(
         choices=likert_choices,
-        label="I intended on purchasing from an ethical clothing retailer "
-              "over the last month when at home",
+        label="I intended to purchase from an ethical clothing retailer "
+              "online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     Intention2 = models.StringField(
         choices=likert_choices,
         label="I have tried to purchase from an ethical clothing retailer "
-              "over the last month from home",
+              "online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     Plan1 = models.StringField(
         choices=likert_choices,
-        label="I made a plan to buy from an ethical clothing retailer "
-              "from home in the last month",
+        label="I made a plan to purchase from an ethical clothing retailer "
+              "online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     Intention4 = models.StringField(
         choices=likert_choices,
         label="I wanted to purchase from an ethical clothing retailer "
-              "from home in the last month",
+              "online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     SubjectiveNorm2 = models.StringField(
         choices=likert_choices,
         label="My family has purchased from an ethical clothing retailer "
-              "in the last month from home",
+              "online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     SubjectiveNorm3 = models.StringField(
         choices=likert_choices,
-        label="Those who are important to me think I should purchase from "
-              "an ethical clothing retailer when I've been at home in the "
-              "last month",
+        label="In the last three months, I have felt pressure from those "
+              "important to me to purchase online "
+              "from an ethical clothing retailer",
         widget=widgets.RadioSelectHorizontal
     )
     SubjectiveNorm4 = models.StringField(
         choices=likert_choices,
-        label="I have felt pressure from society in the last month to purchase "
-              "from an ethical clothing retailer when at home",
+        label="In the last three months, I have felt pressure from society "
+              "to purchase "
+              "online from an ethical clothing retailer",
         widget=widgets.RadioSelectHorizontal
     )
     SubjectiveNorm5 = models.StringField(
         choices=likert_choices,
-        label="My friends think I should purchase from an ethical clothing "
+        label="In the last three months, my friends encouraged me to purchase "
+              "online from an ethical clothing "
               "retailer",
         widget=widgets.RadioSelectHorizontal
     )
     PBC1 = models.StringField(
         choices=likert_choices,
-        label="It would have been easy for me to purchase from an ethical "
-              "clothing retailer from home in the last month",
+        label="It would have been easy for me to purchase online from an ethical "
+              "clothing retailer in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     PBC2 = models.StringField(
@@ -169,20 +171,20 @@ class Player(BasePlayer):
     )
     Attitude2 = models.StringField(
         choices=likert_choices,
-        label="The impact on the environment caused by purchasing from "
-              "ethical clothing retailers would be good",
+        label="Purchasing from ethical clothing retailers would significantly "
+              "improve the environment",
         widget=widgets.RadioSelectHorizontal
     )
     Attitude3 = models.StringField(
         choices=likert_choices,
-        label="The impact on employee welfare caused by purchasing "
-              "from ethical clothing retailers would be good",
+        label="Purchasing from ethical clothing retailers would significantly "
+              "improve employee welfare",
         widget=widgets.RadioSelectHorizontal
     )
     Attitude4 = models.StringField(
         choices=likert_choices,
-        label="The impact on animal welfare caused by purchasing "
-              "from ethical clothing retailers would be good",
+        label="Purchasing from ethical clothing retailers would significantly "
+              "improve animal welfare",
         widget=widgets.RadioSelectHorizontal
     )
     SDB1 = models.BooleanField(

@@ -25,8 +25,8 @@ class Player(BasePlayer):
         label="Which retailer's gift card would you most prefer?",
         widget=widgets.RadioSelectHorizontal
     )
-    RankingAgreement = models.BooleanField(
-        choices=[[True, 'Yes'], [False, 'No']],
+    RankingAgreement = models.StringField(
+        choices=[['1', 'Yes'], ['0', 'No'], ['-1', "I don't know"]],
         label='Do you agree with the ethical rankings of the retailers?',
         widget=widgets.RadioSelectHorizontal
     )

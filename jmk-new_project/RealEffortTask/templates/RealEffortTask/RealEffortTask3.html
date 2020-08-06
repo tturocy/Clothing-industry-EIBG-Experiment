@@ -17,7 +17,13 @@
             {% for row in table %}
             <tr>
                 {% for col in row %}
-                    <td align="center">{{ col }}</td>
+                    <td align="center">
+                       {% if col %}
+                          <img width="10%" src="{% static "RealEffortTask/One.png" %}"/>
+                       {% else %}
+                          <img width="10%" src="{% static "RealEffortTask/Zero.png" %}"/>
+                       {% endif %}
+                    </td>
                 {% endfor %}
             </tr>
             {% endfor %}
