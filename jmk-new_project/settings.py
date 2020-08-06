@@ -4,7 +4,7 @@ SESSION_CONFIGS = [
     dict(name='Survey',
          display_name="Ethical intention-behaviour gap",
          num_demo_participants=2,
-         app_sequence=[#'Survey',
+         app_sequence=['Survey',
                        'RealEffortTask',
                        'GiftCard'])
 ]
