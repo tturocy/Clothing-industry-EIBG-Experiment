@@ -1,6 +1,6 @@
 from otree.api import (
     models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
-    Currency as c, currency_range
+    Currency as c
 )
 
 doc = ''
@@ -19,6 +19,7 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     pass
 
+
 likert_choices = [
     ['1', 'Strongly Disagree'],
     ['2', 'Disagree'],
@@ -26,6 +27,7 @@ likert_choices = [
     ['4', 'Agree'],
     ['5', 'Strongly Agree']
 ]
+
 
 class Player(BasePlayer):
     Example = models.StringField(
@@ -132,9 +134,11 @@ class Player(BasePlayer):
     Ethnicity = models.StringField(
         blank=True,
         choices=[
-            ['1', 'White (English / Welsh / Scottish / Northern Irish / British / Irish / Gypsy or Irish Traveller/Other)'],
+            ['1', 'White (English / Welsh / Scottish / Northern Irish / British / Irish / '
+                  'Gypsy or Irish Traveller/Other)'],
             ['2',
-             'Mixed / Multiple ethnic groups (White and Black Caribbean / White and Black African / White and Asian / Other)'],
+             'Mixed / Multiple ethnic groups (White and Black Caribbean / '
+             'White and Black African / White and Asian / Other)'],
             ['3', 'Asian / Asian British (Indian / Pakistani / Bangladeshi / Chinese / Other)'],
             ['4', 'Black / Black British (African / Caribbean / Other)']],
         label="What is your ethnicity?",
