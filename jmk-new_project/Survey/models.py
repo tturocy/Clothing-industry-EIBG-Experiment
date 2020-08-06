@@ -198,7 +198,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal
     )
     SDB5 = models.BooleanField(
-        label="I sometimes feel resentful when I don't get my way",
+        label="I sometimes feel resentful when I don't get my own way",
         widget=widgets.RadioSelectHorizontal
     )
     SDB6 = models.BooleanField(

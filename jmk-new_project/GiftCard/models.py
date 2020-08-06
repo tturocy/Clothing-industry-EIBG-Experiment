@@ -16,13 +16,13 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     GiftCard1 = models.StringField(
         choices=[['1', 'A'], ['2', 'B'], ['3', 'C'], ['4', 'D'], ['5', 'E']],
-        label="Which retailer's gift card would you like?",
+        label="Which retailer's gift card would you most prefer?",
         widget=widgets.RadioSelectHorizontal
     )
     GiftCard2 = models.StringField(
         choices=[['1', 'A - Komodo'], ['2', 'B - ASOS'], ['3', 'C - Next'],
                  ['4', 'D - H&M'], ['5', 'E - Boohoo']],
-        label="Which retailer's gift card would you like?",
+        label="Which retailer's gift card would you most prefer?",
         widget=widgets.RadioSelectHorizontal
     )
     RankingAgreement = models.BooleanField(
