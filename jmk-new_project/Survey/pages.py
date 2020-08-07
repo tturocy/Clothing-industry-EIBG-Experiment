@@ -19,7 +19,7 @@ class Survey3(Page):
     form_fields = ['Plan1', 'SDB9', 'SubjectiveNorm3', 'SDB10', 'PBC3', 'SDB11', 'Attitude3', 'SDB12', 'Attitude22']
 class Survey4(Page):
     form_model = 'player'
-    form_fields = ['Intention4', 'SDB13', 'Attitude4', 'SDB14', 'SubjectiveNorm4', 'SDB15', 'PBC4', 'SDB16', 'SubjectiveNorm5', 'SDB17', 'PBC5', 'SDB18', 'Attitude12']
+    form_fields = ['Intention4', 'SDB13', 'Attitude4', 'SDB14', 'SubjectiveNorm4', 'SDB15', 'PBC4', 'SDB16', 'SubjectiveNorm5', 'SDB17', 'SDB18', 'Attitude12']
 class Survey5(Page):
     form_model = 'player'
     form_fields = ['Plan2', 'Intention11', 'Age', 'Gender', 'Ethnicity', 'Income', 'PastBehaviour']

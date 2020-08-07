@@ -107,25 +107,19 @@ class Player(BasePlayer):
     PBC2 = models.StringField(
         choices=likert_choices,
         label="I have had complete control over being able to purchase from "
-              "an ethical clothing retailer from home in the last month",
+              "an ethical clothing retailer online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     PBC3 = models.StringField(
         choices=likert_choices,
         label="It would have been challenging to purchase from an ethical "
-              "clothing retailer from home in the last month",
+              "clothing retailer online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     PBC4 = models.StringField(
         choices=likert_choices,
         label="If I wanted to, I could have purchased from an ethical "
-              "clothing retailer from home in the last month",
-        widget=widgets.RadioSelectHorizontal
-    )
-    PBC5 = models.StringField(
-        choices=likert_choices,
-        label="It has been up to me whether I have bought from an ethical "
-              "clothing retailer from home in the last month",
+              "clothing retailer online in the last three months",
         widget=widgets.RadioSelectHorizontal
     )
     Age = models.IntegerField(blank=True, label='What is your age?')
